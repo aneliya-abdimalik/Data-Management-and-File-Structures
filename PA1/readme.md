@@ -13,23 +13,6 @@ Developed for the **CENG 351: Data Management and File Structures** course at ME
 - MySQL (remote server)
 - SQL (DDL and DML queries)
 
-## Project Structure
-
-ceng/
-└── ceng351/
-└── cengfactorydb/
-├── CENGFACTORYDB.java # Main implementation class
-├── ICENGFACTORYDB.java # Provided interface (do not modify)
-├── Evaluation.java # Provided test driver (do not modify)
-├── FileOperations.java # Utility to load .txt data
-├── Factory.java # POJO for Factory table
-├── Employee.java # POJO for Employee table
-├── Worksin.java # POJO for WorksIn table
-├── Product.java # POJO for Product table
-├── Produce.java # POJO for Produce table
-├── Shipment.java # POJO for Shipment table
-└── QueryResult.java # POJO for query return results
-
 ## Schema
 
 | Table      | Fields |
@@ -56,7 +39,7 @@ ceng/
 - ✅ Increase production cost by a percentage
 - ✅ Delete inactive employees by date
 
-## Extra Features (Optional)
+## Extra Features 
 
 Implemented as methods:
 - Employee salary ranking (dense/gap)
@@ -64,12 +47,3 @@ Implemented as methods:
 - Salary variance by start date
 - Auto-delete losing products from Produce table
 
-## How to Run
-
-### 1. Compile
-
-```bash
-javac -classpath .:/path/to/mysql-connector-java-8.0.xx.jar \
-    CENGFACTORYDB.java ICENGFACTORYDB.java Evaluation.java \
-    FileOperations.java Factory.java Employee.java Worksin.java \
-    Product.java Produce.java Shipment.java QueryResult.java
